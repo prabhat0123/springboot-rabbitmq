@@ -1,4 +1,4 @@
-## 
+s## 
 
 Exchanges are like post offices or mailboxes and clients publish a message to an AMQP exchange. 
 There are four built-in exchange types
@@ -11,3 +11,20 @@ There are four built-in exchange types
 ```
 Queues are bound to an exchange using a routing key
 Messages are sent to an exchange with a routing key. The exchange then distributes copies of messages to queues
+
+
+This application have 3 queues  
+	
+```
+1. emailQueue
+2. pagerQueue
+3. emailQueue
+
+```
+
+
+** Request json: 
+```
+	{ "msgLabel": "Message Message Message", 	"msgBody":  "This is your message", "routingKey": "ABC" }
+```
+  
