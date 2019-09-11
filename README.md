@@ -17,9 +17,9 @@ Messages are sent to an exchange with a routing key. The exchange then distribut
  This application define 3 queues
 	
 ```
-1. emailQueue : It bind to direct exchange (directEX) with Routing key EMAIL, and to topic exchahge (topicEx) with 	                       *.emailQueue.*
-2. pagerQueue : It bind to direct exchange (directEX) with Routing key PAGER, and to topic exchahge (topicEx) with 	                       *.pagerQueue.*
-3. smsQueue : It bind to direct exchange (directEX) with Routing key SMS, and to topic exchahge (topicEx) with 	                       *.smsQueue.*
+1. emailQueue : It bind to direct exchange (directEX) with Routing key EMAIL, and to topic exchahge (topicEx) with *.emailQueue.*
+2. pagerQueue : It bind to direct exchange (directEX) with Routing key PAGER, and to topic exchahge (topicEx) with *.pagerQueue.*
+3. smsQueue : It bind to direct exchange (directEX) with Routing key SMS, and to topic exchahge (topicEx) with *.smsQueue.*
 ```
 
 
