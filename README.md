@@ -13,18 +13,23 @@ Queues are bound to an exchange using a routing key
 Messages are sent to an exchange with a routing key. The exchange then distributes copies of messages to queues
 
 
-This application have 3 queues  
+# Queues , 
+ This application define 3 queues
 	
 ```
-1. emailQueue
-2. pagerQueue
-3. emailQueue
-
+1. emailQueue : It bind to direct exchange (directEX) with Routing key EMAIL, and to topic exchahge (topicEx) with 	                       *.emailQueue.*
+2. pagerQueue : It bind to direct exchange (directEX) with Routing key PAGER, and to topic exchahge (topicEx) with 	                       *.pagerQueue.*
+3. smsQueue : It bind to direct exchange (directEX) with Routing key SMS, and to topic exchahge (topicEx) with 	                       *.smsQueue.*
 ```
 
 
-** Request json: 
+# Request json: 
 ```
-	{ "msgLabel": "Message Message Message", 	"msgBody":  "This is your message", "routingKey": "ABC" }
+{ "msgLabel": "Message Message Message", "msgBody":  "This is your message", "routingKey": "ABC" }
 ```
+This application expose 3 endpoints.  send/fanout , send/topic, send/direct, messages are routed based of passed routingKey in request body. 
+
+
+
+
   
